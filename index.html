@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+    body {
+        margin: 50px;
+        background-image: url("background.jpg")
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 130%
+    }
+        
+    .contact {
+        width: 20%;
+    }
+    
+    .container {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+    }
+
+    .container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    float: left;
+    overflow: hidden; 
+    }
+
+    .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    }
+
+    .container a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .show {
+    display: block;
+    }
+
+    
+    </style>
+    
+    <title>Monica Rizzo</title>
+
+    <link rel="stylesheet" href="/home/monica/Personal_Website/font-awesome-4.7.0/css/font-awesome.min.css">
+        
+</head>
+
+<body>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+};
+</script>
+<div class="header" style=" background: linear-gradient(to bottom, #585858 0%, #000000 100%); padding: 10px; height: 150px ">
+  <div class="myself" style="float: left; padding-left: 20px">
+  <h1 style="color: white; font-family: Arial; font-size: 50px; margin-bottom: 0px">Monica Rizzo</h1>
+  <p style="color: white; font-style: italic">Rochester Institute of Technology</p>
+  </div>
+  <div class="contact" style="float: right; width: 50%; padding-right: 20px" >
+    <h4 style="color: white; text-align: right; line-height: 20%">Contact:</h4>
+
+    <p style="color: white; font-size: 14px; text-align: right">mxr5584 at rit.edu<br>
+    Department of Physics and Astronomy,<br>
+    Rochester Institute of Technology, <br>
+    54 Lomb Memorial Drive Rochester, NY 14623 </p>
+    <div class=links style="float:right">
+    <a href="https://github.com/mrizzo25"><i class="fa fa-github" style="color: white"></i></a>
+    &nbsp;
+    <a href="https://www.linkedin.com/in/monica-rizzo-921409a3/"><i class="fa fa-linkedin" style="color: white"></i></a>
+    &nbsp;
+    <a href="https://causa.carbonmade.com/"><i class="fa fa-paint-brush" style="color: white"></i></a>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <a href="index.html">Home</a>
+  <a href="eos.html">Equation of State Study</a>
+  <a href="cv.html">CV</a>
+</div>
+
+<div class="block1" style="background-color: white; position: fixed; margin-right: 50px;">
+  <div class="me">
+     <img src="fake_telescope.jpg" style="float: right; width: 30%; padding: 50px;">
+  </div>
+
+
+  <div class="description" style="padding: 50px;">
+    <h2 style="font-family: Arial"> About </h2>
+    <p>I am a rising senior in the Rochester Institute of Technology's undergraduate Physics major,
+    participating in reasearch in the field of gravitational wave astrophysics. As a member of the
+    <a href=http://www.ligo.org/>LIGO Scientific Collaboration</a>, I have worked on developing
+    more accurate and efficient ways to interpret gravitational waves, advised by
+    <a href="http://ccrg.rit.edu/~oshaughn/Richard_OShaughnessy/Home.html">Dr. Richard O'Shaughnessy</a>. See
+    my <a href="pe.html">parameter estimation</a> page for more information about the work I have done involving
+    the parameter estimation of gravitational waves from binary neutron stars.
+    As an REU student in the 2017 CIERA Northwestern cohort, I studied the effect of neutron star nuclear
+    equation of state on ejected matter and kilonova emission in binary neutron star and black hole-neutron star
+    mergers, under <a href="http://faculty.wcas.northwestern.edu/vicky/">Dr. Vicky Kalogera</a> and Dr. Chris Pankow.
+    Learn more <a href="eos.html"> here</a>.
+    </p>
+    
+    <p>
+    I am primarily involved in binary neutron stars and neutron star-black hole modeling projects,
+    but have a general interest in relativistic astrophysics and compact binaries. I am also very interested
+    in numerical simulation and data analysis techniques, and am particularly fond of cubic spline interpolation.
+    When I'm not writing code or doing math for fun, I enjoy rock climbing, botany, and working as a freelance graphic
+    designer.</p>
+  </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
