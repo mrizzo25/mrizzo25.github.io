@@ -3,75 +3,185 @@
 <html>
 <head>
 
+    <style>
+    body {
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 3%;
+        box-shadow: 10px 10px 15px #888888;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 130%
+    }
+
+    .container {
+    overflow: hidden;
+    background-color: #363636;
+    font-family: Arial;
+    }
+
+    .container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    .container a:hover, .dropdown:hover .dropbtn {
+    background-color: teal;
+    }
+
+    .myself a:hover {
+    color: grey;
+    text-decoration: none;
+    }
+  
+    .myself a:link {
+    color: white;
+    text-decoration: none;
+    }
+
+    .myself a:visited {
+    color: white;
+    text-decoration: none;
+    }
+
+    .myself a:active {
+    text-decoration: none;
+    }
+
+
+    .block1 a:hover {
+    color: grey;
+    text-decoration: none;
+    }
+
+    .block1 a:link {
+    color: teal;
+    text-decoration: none;
+    }
+
+    .block1 a:visited {
+    color: blue;
+    text-decoration: none;
+    }
+
+    .block1 a:active {
+    text-decoration: none;
+    }
+
+
+    </style>
+
+
     <title>Monica Rizzo</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
 </head>
 
-<div class="header" style=" background: linear-gradient(to bottom, #585858 0%, #000000 100%); padding: 10px; height: 150px ">
+<!-- Header (at top of every page)  -->
+
+<div class="header" style=" background: #00a0a2; padding: 10px; height: 100px;">
 
   <div class="myself" style="float: left; padding-left: 20px">
-  <h1 style="color: white; font-family: Arial; font-size: 50px; margin-bottom: 0px">Monica Rizzo</h1>
+  <h1 style="color: white; font-family: Arial; font-size: 50px; margin-bottom: 0px"><a href="index.html">Monica Rizzo</a></h1>
   </div>
 
-  <div class="contact" style="float: right; width: 50%; padding-right: 20px" >
-    <h4 style="color: white; text-align: right; line-height: 20%">Contact:</h4>
+</div>
 
-    <p style="color: white; font-size: 14px; text-align: right">monica.rizzo025@gmail.com</p>
+<!-- Menu bar thing  -->
 
-    <div class=links style="float:right">
-    <a href="https://www.linkedin.com/in/monica-rizzo-921409a3/"><i class="fa fa-linkedin" style="color: white"></i></a>
-    &nbsp;
-    <a href="https://causa.carbonmade.com/"><i class="fa fa-paint-brush" style="color: white"></i></a>
-    </div>
+<div class="container">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+  <a href="simone.html">The Van Life</a>
+</div>
+
+<!-- Body of home page  -->
+
+<div class="block1" style="background-color: #ececec; overflow: hidden">
+
+    <div class="me" style="float:left">
+
    
+        <div class="image" style="overflow:hidden; width: 400px; height: 400px; padding-right: 50px; padding-left: 50px; padding-top: 50px; padding-bottom: 50px">
+        <a href="https://www.facebook.com/monica.m.rizzo"><img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/20431618_1640064626018100_1378877915448183816_n.jpg?_nc_cat=0&oh=03c5a6b64969c4f54f44b6ff6b3839e7&oe=5BA10C43" style="width: auto; height: 100%; display:inline; margin: 0 auto; border-radius: 20px; border-style: solid; border-color: white"></a>
+		</div>
 
- 
-    <div class=links style="float:right">
-    <a href="https://github.com/mrizzo25"><i class="fa fa-github" style="color: white"></i></a>
-    &nbsp;
-    <a href="https://www.linkedin.com/in/monica-rizzo-921409a3/"><i class="fa fa-linkedin" style="color: white"></i></a>
-    &nbsp;
-    <a href="https://causa.carbonmade.com/"><i class="fa fa-paint-brush" style="color: white"></i></a>
+        <div class="contact" style="padding-right: 50px; padding-left: 50px; padding-bottom: 20px; background: white; margin-right: 50px; margin-left: 50px; margin-bottom: 30px; padding-top: 20px; border-radius: 20px; margin-top: -30px">
+			<h3 style="font-family: Arial">Contact</h3>
+			<hr>
+			<p><i class="fa fa-envelope" style="color: black"></i> &ensp; monica.rizzo025@gmail.com</p>
+ 			<p><i class="fa fa-phone" style="color: black"></i> &ensp; (716) 507-3086</p> 
+		</div>
+
     </div>
 
-  </div>
+
+    <div class="description" style="padding: 50px">
+
+
+        <div class="desc" style="width:100%; display: inline">
+        <h1 style="font-family: Arial"> About </h1>
+
+
+        <p> I am currently an incoming member of the Astronomy PhD program at Northwestern University. During the spring of 2018, I graduated from the Rochester Institute of Technology with a B.S. in Physics and an immersion in Mathematics.
+        </p>
+
+        <p> For the past four years, I have been a member of the LIGO scientific collaboration, and have contributed to various studies of gravitational waves. In particular, I work on ways to optimize and automate the methods we use to interpret gravitational wave signals. For more on my research, see <a href="research.html">here</a>. </p>
+
+
+        <p> For the next few months, before I move to Chicago, I will be travelling the country and living out of my most recent project, Simone. Simone is a 1999 Ford E-150 cargo van, which I am currently in the process of converting to a tiny living space. I'll be documenting most of the conversion process <a href="simone.html">here</a> if you're interested in what my build looks like.  
+        </p>
+
+		<p> Stay tuned for adventures and cool science stuff!</a>
+
+
+		</div>
+
+		<hr>
+
+        <div class="quote" style="margin: 0 auto; width: 60%; float:right; padding-right: 5%">
+
+
+        <p style="font-style: italic">Belief, like fear or love, is a force to be understood as we understand the theory of relativity and principals of uncertainty. Phenomena that determine the course of our lives....These forces that often remake time and space, that can shape and alter who we imagine ourselves to be, begin long before we are born and continue after we perish. Our lives and our choices, like quantum trajectories, are understood moment to moment. That each point of intersection, each encounter, suggest a new potential direction. </p>
+
+        <p style="font-style: italic; text-align:right"> -David Mitchell</p>
+
+        </div>
+
+
+
+    </div>
+
+
+
 </div>
 
-<div class="block1" style="background-color: white; position: fixed; margin-right: 50px;">
-  <div class="me">
-     <img src="fake_telescope.jpg" style="float: right; width: 30%; padding: 50px;">
-  </div>
+    <div class="media" style="background: #363636; padding: 10px; height: 30px; right: 8%; left: 8%">
+
+        <div class=links style="margin: 0 auto; width: 100px; padding-top: 5px">
+            <a href="https://www.linkedin.com/in/monica-rizzo-921409a3/"><i class="fa fa-linkedin" style="color: white"></i></a>
+            &nbsp;
+            <a href="https://causa.carbonmade.com/"><i class="fa fa-paint-brush" style="color: white"></i></a>
+            &nbsp;
+            <a href="https://www.instagram.com/monica.rizzo/"><i class="fa fa-instagram" style="color: white"></i></a>
+            &nbsp;
+            <a href="https://github.com/mrizzo25"><i class="fa fa-github" style="color: white"></i></a>
+        
+        </div>
 
 
-  <div class="description" style="padding: 50px;">
-    <h2 style="font-family: Arial"> About </h2>
-    <p>I am a rising senior in the Rochester Institute of Technology's undergraduate Physics major,
-    participating in reasearch in the field of gravitational wave astrophysics. As a member of the
-    <a href=http://www.ligo.org/>LIGO Scientific Collaboration</a>, I have worked on developing
-    more accurate and efficient ways to interpret gravitational waves, advised by
-    <a href="http://ccrg.rit.edu/~oshaughn/Richard_OShaughnessy/Home.html">Dr. Richard O'Shaughnessy</a>. See
-    my <a href="pe.html">parameter estimation</a> page for more information about the work I have done involving
-    the parameter estimation of gravitational waves from binary neutron stars.
-    As an REU student in the 2017 CIERA Northwestern cohort, I studied the effect of neutron star nuclear
-    equation of state on ejected matter and kilonova emission in binary neutron star and black hole-neutron star
-    mergers, under <a href="http://faculty.wcas.northwestern.edu/vicky/">Dr. Vicky Kalogera</a> and Dr. Chris Pankow.
-    Learn more <a href="eos.html"> here</a>.
-    </p>
-    
-    <p>
-    I am primarily involved in binary neutron stars and neutron star-black hole modeling projects,
-    but have a general interest in relativistic astrophysics and compact binaries. I am also very interested
-    in numerical simulation and data analysis techniques, and am particularly fond of cubic spline interpolation.
-    When I'm not writing code or doing math for fun, I enjoy rock climbing, botany, and working as a freelance graphic
-    designer.</p>
-  </div>
+        
 
+    </div>
 
-
-
-</div>
 
 
 </body>
