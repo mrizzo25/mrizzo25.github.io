@@ -211,6 +211,11 @@
     <title>Monica Rizzo</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://leafo.net/sticky-kit/src/jquery.sticky-kit.js"></script>
+
+
         
 </head>
 
@@ -263,8 +268,19 @@
 
 
 
+    <script>
 
-    <div class="navigation" id="nav_bar" style="float:left; margin-top:-20px">
+	$(function() {
+  		$(".navigation").stick_in_parent({
+    	offset_top: 10
+  		});
+	});
+
+    </script>
+
+
+
+    <div class="navigation" id="nav_bar" style="float:left; margin-top: -20px">
 
 
         <div class="image" style="overflow:hidden; width: 300px; height: 300px; margin: 50px">
@@ -279,23 +295,6 @@
         </div>
 
     </div>
-
-
-    <script>
-
-var stickySidebar = $('.navigation').offset().top;
-
-$(window).scroll(function() {  
-    if ($(window).scrollTop() > stickySidebar) {
-        $('.navigation').addClass('affix');
-    }
-    else {
-        $('.navigation').removeClass('affix');
-    }  
-});
-
-    </script>
-
 
 
 
