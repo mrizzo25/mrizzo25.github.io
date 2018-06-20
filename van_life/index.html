@@ -149,17 +149,10 @@
     display: block;
     }
 
-    .mySlides {
+    .mySlides1, .mySlides2, ..mySlides3 {
         display:none;
 		width: 100%;
     }
-
-
-    .mySlides1 {
-        display:none;
-        width: 100%;
-    }
-
 
     .w3-button{border:none;
     display:inline-block;
@@ -212,9 +205,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://leafo.net/sticky-kit/src/jquery.sticky-kit.js"></script>
 
+
+    <script>
+	$(function() {
+  		$(".navigation").stick_in_parent({
+    	offset_top: 10
+  		});
+	});
+    </script>
 
         
 </head>
@@ -240,6 +241,11 @@
   <a href="https://mrizzo25.github.io/CV.pdf">CV</a>
   <a href="https://mrizzo25.github.io/van_life/">The Van Life</a>
 </div>
+
+
+
+
+
 
 <!-- Body of home page  -->
 
@@ -268,18 +274,6 @@
 
 
 
-    <script>
-
-	$(function() {
-  		$(".navigation").stick_in_parent({
-    	offset_top: 10
-  		});
-	});
-
-    </script>
-
-
-
     <div class="navigation" id="nav_bar" style="float:left; margin-top: -20px">
 
 
@@ -289,6 +283,7 @@
         </div>
 
         <div class="menu">
+			<a href="#jun19">June 19, 2018 - Bed Liner and Some Insulation</a>
 			<a href="#jun17">June 17, 2018 - Planning and More Planning</a>
 			<a href="#jun16">June 16, 2018 - Meet Simone</a>
 
@@ -296,6 +291,96 @@
 
     </div>
 
+
+	<div id="jun19" class="post">
+	    <h3>Bed Liner and Some Insulation</h3>
+        <h5 style="font-size: 9pt; margin-top:-10px; font-weight: normal"><i>June 19, 2018</i></h5>
+
+		<p> Yesterday I didn't get much done because I had appointments/work to take care of, so
+		I'm including what I was able to do in this post. During the evening, I was able to finish
+		a first pass at sanding the floor of the interior, which, in the process, revealed a few
+		more holes in the floor. I sealed those off, and ground/sanded off most of the rust
+		spots. On an unrelated note, turns out high-velocity metal shavings make a great exfoliant!
+		</p>
+
+	
+        <div class="w3-display-container">
+        <img class="mySlides3" style="width:100%" src="https://i.imgur.com/84u2G3c.jpg">
+        <img class="mySlides3" style="width:100%" src="https://i.imgur.com/f4IUkCj.jpg">
+		<img class="mySlides3" style="width:100%" src="https://i.imgur.com/bZp61al.jpg">
+        <img class="mySlides3" style="width:100%" src="https://i.imgur.com/LEDI2Wq.jpg">
+		<img class="mySlides3" style="width:100%" src="https://i.imgur.com/lRHQAcQ.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)")>&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
+        </div>
+
+
+
+
+		<p> And of course, since I was on my own, I had to have a quick selfie session. This morning
+		I finished sanding, by going back over everything with the most adorable little orbital
+		sander I have ever seen. I then manually finished off spots I couldn't reach with the 
+		orbital sander using some 50 grit sandpaper. I also re-caulked some holes, and while waiting for
+		that to set, I filled in some of the bigger cavities in the hull with fiberglass insulation.
+		So that they didn't fall through, I sprayed the back of each piece of insulation with 
+		adhesive.</p>
+
+		<p>After so much prep, I finally got around to painting on the truck bed liner. Basically, 
+		I just rolled in on like any normal paint, and filled in edges and hard to reach spaces with
+		an old paintbrush. Pro-tip: if you are planning in doing this to a vehicle at any point, make
+		sure you have a rubber (or comparably dense material) paint roller cover. I went with a regular 
+		polyester roller cover, and the bed liner completely shredded it while I was painting it on. 
+		That stuff dries very quickly, and is incredibly adhesive. A lot of turpentine was needed for
+		cleanup.
+		</p>
+
+        <div class="w3-display-container">
+        <img class="mySlides4" style="width:100%" src="https://i.imgur.com/4soRogj.jpg">
+        <img class="mySlides4" style="width:100%" src="https://i.imgur.com/UMFYzfV.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)")>&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
+        </div>
+
+
+
+        <script>
+            var slideIndex3 = 1;
+            showDivs3(slideIndex3);
+            function plusDivs3(n) {
+                showDivs3(slideIndex3 += n);
+            }
+            function showDivs3(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides3");
+                if (n > x.length) {slideIndex3 = 1}    
+                if (n < 1) {slideIndex3 = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex3-1].style.display = "block";  
+            }
+        </script>
+
+        <script>
+            var slideIndex4 = 1;
+            showDivs4(slideIndex4);
+            function plusDivs4(n) {
+                showDivs4(slideIndex4 += n);
+            }
+            function showDivs4(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides4");
+                if (n > x.length) {slideIndex4 = 1}    
+                if (n < 1) {slideIndex4 = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex4-1].style.display = "block";  
+            }
+        </script>
+
+
+	</div>
 
 
     <div id="jun17" class="post">
@@ -314,12 +399,12 @@
 
         <br>
     
-        <div class="w3-display-container">
-        <img class="mySlides1" src="https://i.imgur.com/qTQYYKK.jpg">
-        <img class="mySlides1" style="margin-top: 30px" src="https://i.imgur.com/OSLaxih.jpg">
-        <img class="mySlides1" src="https://i.imgur.com/tU6eBvc.jpg">
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
+        <div  class="w3-display-container">
+        <img class="mySlides2" style="width:100%" src="https://i.imgur.com/qTQYYKK.jpg">
+        <img class="mySlides2" style="margin-top: 30px; width:100%" src="https://i.imgur.com/OSLaxih.jpg">
+        <img class="mySlides2" style="width:100%" src="https://i.imgur.com/tU6eBvc.jpg">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
         </div>
 
 		<br>
@@ -362,24 +447,21 @@
 		tomorrow evening.
 		</p>
 
-
         <script>
-            var slideIndex1 = 1;
-            showDivs1(slideIndex1);
-
-            function plusDivs1(n) {
-                showDivs1(slideIndex1 += n);
+            var slideIndex2 = 1;
+            showDivs2(slideIndex2);
+            function plusDivs2(n) {
+                showDivs2(slideIndex2 += n);
             }
-
-            function showDivs1(n) {
+            function showDivs2(n) {
                 var i;
-                var x = document.getElementsByClassName("mySlides1");
-                if (n > x.length) {slideIndex1 = 1}    
-                if (n < 1) {slideIndex1 = x.length}
+                var x = document.getElementsByClassName("mySlides2");
+                if (n > x.length) {slideIndex2 = 1}    
+                if (n < 1) {slideIndex2 = x.length}
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";  
                 }
-                x[slideIndex1-1].style.display = "block";  
+                x[slideIndex2-1].style.display = "block";  
             }
         </script>
 
@@ -411,12 +493,12 @@
 		<br>
 	
 		<div class="w3-display-container">
-  		<img class="mySlides" src="https://i.imgur.com/1mozni8.jpg">
-  		<img class="mySlides" src="https://i.imgur.com/6OqMIU4.jpg">
-		<img class="mySlides" src="https://i.imgur.com/qKgMFd9.jpg">
-		<img class="mySlides" src="https://i.imgur.com/VOk6ONI.jpg">
-  		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  		<img class="mySlides1" style="width:100%" src="https://i.imgur.com/1mozni8.jpg">
+  		<img class="mySlides1" style="width:100%" src="https://i.imgur.com/6OqMIU4.jpg">
+		<img class="mySlides1" style="width:100%" src="https://i.imgur.com/qKgMFd9.jpg">
+		<img class="mySlides1" style="width:100%" src="https://i.imgur.com/VOk6ONI.jpg">
+  		<button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+  		<button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
 		</div>
 
 
@@ -441,25 +523,22 @@
 		<p>By the end of the day, we were able to weld a patch to the left wheel well, and
 		secure the floor patch on the left side. Having established a process, we aimed to 
 		patch the other side the following day. </p>
-
-
+		
 		<script>
-			var slideIndex = 1;
-			showDivs(slideIndex);
-
-			function plusDivs(n) {
-  				showDivs(slideIndex += n);
+			var slideIndex1 = 1;
+			showDivs1(slideIndex1);
+			function plusDivs1(n) {
+  				showDivs1(slideIndex1 += n);
 			}
-
-			function showDivs(n) {
+			function showDivs1(n) {
   				var i;
-  				var x = document.getElementsByClassName("mySlides");
- 				if (n > x.length) {slideIndex = 1}    
-  				if (n < 1) {slideIndex = x.length}
+  				var x = document.getElementsByClassName("mySlides1");
+ 				if (n > x.length) {slideIndex1 = 1}    
+  				if (n < 1) {slideIndex1 = x.length}
   				for (i = 0; i < x.length; i++) {
      				x[i].style.display = "none";  
   				}
-  				x[slideIndex-1].style.display = "block";  
+  				x[slideIndex1-1].style.display = "block";  
 			}
 		</script>
 
