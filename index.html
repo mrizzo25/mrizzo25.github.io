@@ -3,85 +3,14 @@
 <html>
 <head>
 
-    <style>
-    body {
-        margin-right: 3%;
-        margin-left: 3%;
-        margin-top: 3%;
-        box-shadow: 10px 10px 15px #888888;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 130%
-    }
-
-    .container {
-    overflow: hidden;
-    background-color: #363636;
-    font-family: Arial;
-    }
-
-    .container a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-
-    .container a:hover, .dropdown:hover .dropbtn {
-    background-color: teal;
-    }
-
-    .myself a:hover {
-    color: grey;
-    text-decoration: none;
-    }
-  
-    .myself a:link {
-    color: white;
-    text-decoration: none;
-    }
-
-    .myself a:visited {
-    color: white;
-    text-decoration: none;
-    }
-
-    .myself a:active {
-    text-decoration: none;
-    }
-
-
-    .block1 a:hover {
-    color: grey;
-    text-decoration: none;
-    }
-
-    .block1 a:link {
-    color: teal;
-    text-decoration: none;
-    }
-
-    .block1 a:visited {
-    color: blue;
-    text-decoration: none;
-    }
-
-    .block1 a:active {
-    text-decoration: none;
-    }
-
-
-    </style>
 
 
     <title>Monica Rizzo</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+    <link rel="stylesheet" href="style.css">
+	
+
 </head>
 
 <!-- Header (at top of every page)  -->
@@ -98,7 +27,17 @@
 
 <div class="container">
   <a href="https://mrizzo25.github.io/">Home</a>
-  <a href="https://mrizzo25.github.io/research">Research</a>
+
+  <div class="dropdown">   
+	  <button class="dropbtn">Research
+      		<i class="fa fa-caret-down"></i>
+    	</button>
+    <div class="dropdown-content">
+      <a href="https://mrizzo25.github.io/research">About</a>
+      <a href="https://mrizzo25.github.io/3DSkymap">3D Skymap Viewer</a>
+    </div>  
+  </div>
+  
   <a href="CV.pdf">CV</a>
 </div>
 
@@ -116,8 +55,8 @@
         <div class="contact" style="padding-right: 50px; padding-left: 50px; padding-bottom: 20px; background: white; margin-right: 50px; margin-left: 50px; margin-bottom: 30px; padding-top: 20px; border-radius: 20px; margin-top: -30px">
 			<h3 style="font-family: Arial">Contact</h3>
 			<hr>
-			<p><i class="fa fa-envelope" style="color: black"></i> &ensp; monica.rizzo025@gmail.com</p>
- 			<p><i class="fa fa-phone" style="color: black"></i> &ensp; (716) 507-3086</p> 
+			<p><i class="fa fa-envelope" style="color: black"></i> &ensp; monicarizzo2023@northwestern.edu</p>
+		<p><i class="fa fa-phone" style="color: black"></i> &ensp; (716) 507-3086</p> 
 		</div>
 
     </div>
@@ -130,7 +69,7 @@
         <h1 style="font-family: Arial"> About </h1>
 
 
-        <p> I am currently a first year student in the Astronomy PhD program at Northwestern University. During the spring of 2018, I graduated from the Rochester Institute of Technology with a B.S. in Physics and an immersion in Mathematics.
+        <p> I am currently a student in the Astronomy PhD program at Northwestern University. During the spring of 2018, I graduated from the Rochester Institute of Technology with a B.S. in Physics and an immersion in Mathematics.
         </p>
 
         <p> For the past four years, I have been a member of the LIGO scientific collaboration, and have contributed to various studies of gravitational waves. In particular, I work on ways to optimize and automate the methods we use to interpret gravitational wave signals. For more on my research, see <a href="https://mrizzo25.github.io/research">here</a>. </p>
@@ -163,8 +102,8 @@
         <div class=links style="margin: 0 auto; width: 100px; padding-top: 5px">
             <a href="https://www.linkedin.com/in/monica-rizzo-921409a3/"><i class="fa fa-linkedin" style="color: white"></i></a>
             &nbsp;
-            <a href="https://causa.carbonmade.com/"><i class="fa fa-paint-brush" style="color: white"></i></a>
-            &nbsp;
+            <!--<a href="https://causa.carbonmade.com/"><i class="fa fa-paint-brush" style="color: white"></i></a>
+		    &nbsp;-->
             <a href="https://www.instagram.com/monica.rizzo/"><i class="fa fa-instagram" style="color: white"></i></a>
             &nbsp;
             <a href="https://github.com/mrizzo25"><i class="fa fa-github" style="color: white"></i></a>
