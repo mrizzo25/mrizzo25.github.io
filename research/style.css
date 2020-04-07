@@ -31,7 +31,7 @@
         overflow: hidden;
     }
 
-       .dropdown .dropbtn {
+    .dropdown .dropbtn {
         font-size: 16px;
         border: none;
         outline: none;
@@ -76,7 +76,7 @@
     }
 
 
-        .myself a:hover {
+    .myself a:hover {
     color: grey;
     text-decoration: none;
     }
@@ -95,6 +95,29 @@
     text-decoration: none;
     }
 
+    h1.myname {
+	color: rgba(360, 360, 360, 1);
+	text-shadow: -2px -1px 0 rgba(0, 0, 0, .2);
+	font-family: Arial; 
+	font-size: 75px; 
+	font-weight: 900; 
+	margin-bottom: 0px;
+	margin-top: 5px;	
+    }
+
+    h1.myname a:visited {
+    	color: rgba(360, 360, 360, 1)
+    }
+
+    /*h1.myname:before{
+   	font-size: 75px;
+	font-weight: 900;
+	position: absolute;
+	margin: 2px 0 0 2px;
+  	content:attr(title);
+  	color: rgba(360, 360, 360, 0.5);
+  	opacity: 0.9;
+	}*/
 
     .block1 a:hover {
     color: grey;
